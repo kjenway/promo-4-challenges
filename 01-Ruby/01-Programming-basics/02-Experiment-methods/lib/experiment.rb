@@ -30,16 +30,16 @@ end
 def random_subset(an_array, sample_size)
 an_array.sample(sample_size)
 end
-puts random_subset(('a'..'z').to_a, 4)
+
 
 def randomize(an_array)
 an_array.shuffle
 end
-puts randomize(('a'..'z').to_a)
+
 
 def ascending_order(an_array)
  an_array.sort
 end
-puts ascending_order([3,2,8,1])
+
 
 
