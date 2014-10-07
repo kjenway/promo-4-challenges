@@ -3,9 +3,10 @@
 # - Just look in the doc for the right method of the String, Fixnum, and Array classes !
 
 def get_rid_of_surrounding_whitespaces(a_string)
-  # TODO: return a copy of the string with leading and trailing whitespaces removed
+  a_string.strip# TODO: return a copy of the string with leading and trailing whitespaces removed
   # example: get_rid_of_surrounding_whitespaces("  hey yo  ") => "hey yo"
 end
+ puts get_rid_of_surrounding_whitespaces(" exemple ")
 
 def belongs_to?(a_string, a_word)
   # TODO: return true if a_string contains a_word
@@ -41,3 +42,5 @@ def ascending_order(an_array)
   # TODO: return a copy of an_array with elements in ascending order
   # example: ascending_order([7, 3, 1, 6, 9]) => [1, 3, 6, 7, 9]
 end
+
+puts get_rid_of_surrounding_whitespaces("   Hello ")
