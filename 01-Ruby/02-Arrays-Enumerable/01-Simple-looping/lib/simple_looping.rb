@@ -22,10 +22,12 @@ puts sum_with_for(1,5)
 
 def sum_recursive(min, max)
   if min > max
-  return 0
+  return "Error"
+  elsif min == max
+  return max
   else
-  value = min + (sum_recursive(min+1,max))
+    value = min + (sum_recursive(min+1,max))
   end
 end
-puts sum_recursive(1,5)
+puts sum_recursive(8,5)
 
