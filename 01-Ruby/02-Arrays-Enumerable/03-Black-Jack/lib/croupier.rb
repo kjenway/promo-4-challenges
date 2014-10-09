@@ -29,7 +29,7 @@ def play_game
     answer =  gets.chomp
     puts state_of_the_game(player_score, bank_score)
   end
-    end_game_message
+  end_game_message
 end
 
 
