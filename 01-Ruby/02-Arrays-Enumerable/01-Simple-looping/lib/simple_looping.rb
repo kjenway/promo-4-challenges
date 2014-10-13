@@ -1,11 +1,8 @@
 def sum_with_while(min, max)
   # CONSTRAINT: you should use a while..end structure
-  value = min
   while min < max
-  min +=1
-  value = value + min
+    min +=1
   end
-  value
 end
 puts sum_with_while(1,5)
 
