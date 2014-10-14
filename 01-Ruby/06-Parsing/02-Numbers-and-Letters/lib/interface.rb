@@ -2,8 +2,9 @@ require_relative "longest_word"
 
 puts "******** Welcome to the longest word-game !********"
 puts "Here is your grid :"
-grid = generate_grid(9)
-puts grid.join(" ")
+grid = generate_grid(19)
+print grid
+# .join(" ")
 puts "*****************************************************"
 
 puts "What's your best shot ?"

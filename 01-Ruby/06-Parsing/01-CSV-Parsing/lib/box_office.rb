@@ -1,6 +1,5 @@
 # Encoding: utf-8
 require 'csv'
-require 'date'
 
 def most_successfull(number, max_year, file_name)
   movies = []
