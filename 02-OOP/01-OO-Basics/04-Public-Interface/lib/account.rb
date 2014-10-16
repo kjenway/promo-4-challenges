@@ -19,7 +19,7 @@ class BankAccount
     @password = password
     @transactions = []
     @position = 0
-    @name, @iban = name, iban
+    @name, @iban = name, ibangit
     add_transaction(initial_deposit)
   end
 
