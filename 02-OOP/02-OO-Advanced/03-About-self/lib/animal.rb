@@ -27,8 +27,3 @@ class Animal
     "Name: #{@name}, Specie: #{@specie}, Color: #{@color}, Natural Habitat: #{@natural_habitat}"
   end
 end
-
- # Animal.new.name("Fox").color("red")
- # a = Animal.new
- # a = a.name("Fox")
- # a = a.color("red")
