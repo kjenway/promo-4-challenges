@@ -2,11 +2,8 @@ class Dessert
 attr_accessor :name, :calories
 
   def initialize(name, calories)
-<<<<<<< HEAD
     @name = name
     @calories = calories
-=======
->>>>>>> 09dde29a13fdd3dd1c053d423bfd6c47e0ac7970
   end
 
   def healthy?
@@ -23,11 +20,8 @@ attr_accessor :name, :calories
 end
 
 class JellyBean < Dessert
-<<<<<<< HEAD
 attr_reader :flavor
 
-=======
->>>>>>> 09dde29a13fdd3dd1c053d423bfd6c47e0ac7970
   def initialize(name, calories, flavor)
     super(name, calories)
     @flavor = flavor
