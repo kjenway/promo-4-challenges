@@ -1,5 +1,3 @@
-require_relative 'controller'
-
 class Router
   def initialize(controller)
     @controller = controller
