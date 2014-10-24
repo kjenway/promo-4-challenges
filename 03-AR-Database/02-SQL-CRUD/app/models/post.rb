@@ -21,10 +21,8 @@ class Post
       VALUES ('#{@title}', '#{@url}', '#{time_as_integer}', '#{@votes}');")
       @id = DB.last_insert_row_id
     else
-      DB.execute("UPDATE posts
-      SET title = '#{@title}', url = '#{@url}', votes = '#{votes}'
-      WHERE id = #{@id}
-      ;")
+      DB.execute("UPDATE posts SET title = '#{@title}', url = '#{@url}',
+        votes = '#{votes}' WHERE id = #{@id};")
     end
   end
 
@@ -36,12 +34,8 @@ class Post
     db_result = DB.execute("SELECT * FROM posts;")
     db_result.map do |post|
       Post.new(
-        id: post[0],
-        title: post[1],
-        url: post[2],
-        date: Time.at(post[3]),
-        votes: post[4]
-      )
+        id: post[0], title: post[1], url: post[2], date: Time.at(post[3]),
+        votes: post[4])
     end
   end
 
@@ -51,13 +45,8 @@ class Post
     if db_result.nil?
       return nil
     else
-      Post.new(
-        id: db_result[0],
-        title: db_result[1],
-        url: db_result[2],
-        date: Time.at(db_result[3]),
-        votes: db_result[4]
-      )
+      Post.new(id: db_result[0], title: db_result[1], url: db_result[2],
+        date: Time.at(db_result[3]), votes: db_result[4])
     end
   end
 
