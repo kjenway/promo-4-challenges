@@ -22,7 +22,7 @@ class Post
       @id = DB.last_insert_row_id
     else
       DB.execute("UPDATE posts SET title = '#{@title}', url = '#{@url}',
-        votes = '#{votes}' WHERE id = #{@id};")
+        votes = '#{votes}' rWHERE id = #{@id};")
     end
   end
 
