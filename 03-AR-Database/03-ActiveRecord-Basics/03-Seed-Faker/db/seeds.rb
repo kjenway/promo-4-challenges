@@ -4,7 +4,7 @@ require "faker"
 100.times do
   post = Post.new(
     name: Faker::Company.name,
-    url: 03 Faker::Internet.url,
+    url: Faker::Internet.url,
     votes: (0..50).to_a.sample
   )
   post.save
