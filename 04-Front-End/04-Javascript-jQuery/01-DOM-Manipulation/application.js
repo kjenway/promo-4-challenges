@@ -12,15 +12,15 @@ function run_challenges() {
 
 
   // Ex 2. Fill the content of the email input with your email
-  var newEmail = $('#email').val('annabel.menard@gmail.com');
+  $('#email').val('annabel.menard@gmail.com');
 
 
   // Ex 3. Replace the email hint (next to the input) with 'This is my email now'
   //       The text should be emphasized using a <strong> tag
-  var emailHint = $('#email-hint').html('<strong>This is my email now</strong>')
+  $('#email-hint').html('<strong>This is my email now</strong>');
 
   // Ex 4. Add the .blue CSS class to the table header cells (th elements)
-  var color = $('thead').addClass('blue');
+  $('thead').addClass('blue');
 
 
   // Ex 5. Count the number of table body rows there are (team count!)
@@ -31,23 +31,24 @@ function run_challenges() {
   // Ex 6. Say there is a 15th team added to the table.
   //       Add a row at the bottom, this new team should have zero points.
 
-  var add_row = $('tbody').append('<tr><td>15</td><td>New Team</td><td>0</td></tr>');
+  $('tbody').append('<tr><td>15</td><td>New Team</td><td>0</td></tr>');
 
   // Ex 7. Write some code to sum all points given to all teams
-  var sum = 0;  // TODO: replace 0 with your sum result, keep the sum variable.
-
+  var sum = 0; // TODO: replace 0 with your sum result, keep the sum variable.
+  $(('table tbody tr td:nth-child(3)')).each(function(points) {
+    sum += parseFloat($(this).text())});
 
 
   // Ex 8. Change the background color of all table header cells to #DDF4FF
-
+  $('th').css("background-color","#DDF4FF")
 
 
   // Ex 9. Translate the #results list 20px downward (animation would be great ^_^)
-
+  $('#results').animate({"top": "+=20px"}, 1000);
 
 
   // Ex 10. Remove the "Email:" label from the DOM
-
+  $("label[for='email']").remove()
 
 
   // Checking exercise answers. DO NOT MODIFY BELOW
