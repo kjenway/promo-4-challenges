@@ -1,0 +1,31 @@
+body{
+  font-family: Arial;
+}
+
+h1{
+  font-family: Courier;
+  color: Darkblue;
+}
+
+p {
+  text-align: justify
+}
+
+#header{
+  border: 1px solid Darkblue;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+#aside-nav a {
+  color: Darkblue;
+}
+
+#social-list a {
+  color: Red;
+  text-align: center
+}
+
+ul { list-style-type: none;
+}

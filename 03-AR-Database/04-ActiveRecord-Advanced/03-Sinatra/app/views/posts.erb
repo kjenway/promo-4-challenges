@@ -1,3 +1,19 @@
 <h1>Hacker News</h1>
 
-# TODO: list posts here. You can use instance variables set in the controller (app.rb)
+<form action="/" method="post">
+  <input type="text" name="name">
+  <input type="text" name="url">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <a href="<%= post.url %>" target="_blank">
+       <%= post.name %> <%= post.votes %>
+       </a>
+      <!--  <form action="/" method="vote"> -->
+       <a href="/post/<%=post.id %>/voteup">vote_up </a>
+    </li>
+  <% end %>
+</ul>

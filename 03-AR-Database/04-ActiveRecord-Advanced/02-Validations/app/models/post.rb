@@ -8,4 +8,4 @@ class Post < ActiveRecord::Base
   }
   validates :name, uniqueness: { case_sensitive: false }
   # TODO: Add some validation
-end
+endrgi
